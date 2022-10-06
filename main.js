@@ -21,13 +21,7 @@ client.on("ready", () => {
 });
 
 client.on("message", async (msg) => {
-  console.log(msg);
-
-  const chat = await msg.getChat();
-  const chatId = await chat.getInviteCode();
-
-  console.log(chat);
-  console.log(chatId);
+    console.log(msg)
 });
 
 client.initialize();
@@ -49,5 +43,3 @@ app.listen(5000, () => {
   console.log("server run on port 5000");
 });
 
-// chatId = 120363025549513678@g.us
-// invite link = CGyKZqaxb0S6L5sz4RCsj5
